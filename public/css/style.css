@@ -1,0 +1,44 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+ /* General */
+h1, h2, h3, h4, .brand-logo, footer {
+  font-weight: 100;
+}
+
+main p, main li  {
+  font-size: 16pt;
+  line-height: 1.5em;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Home Page */
+#profilePhoto {
+  max-width: 500px;
+}
+
+/* Contact */
+form #submit {
+  width: 100%;
+  height: 30pt;
+}
+
+/* Projects */
+.project-divider {
+  margin-top: 40pt;
+}

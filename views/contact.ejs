@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Your Name</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <% include partials/_header %>
+
+  <main>
+    <div class="container">
+
+      <div class="section">
+        <h2 id="contact">Contact</h2>
+
+        <div class="row">
+          
+          <form class="col s12" action="contact" method="POST">
+
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" name="first_name" type="text">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" name="last_name" type="text">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" name="email" type="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="subject" name="subject" type="text">
+                <label for="subject">Subject</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="submit" type="submit" value="Submit">
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Container -->
+
+  </main>
+
+  <% include partials/_footer %>
+
+  <!--  Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>
