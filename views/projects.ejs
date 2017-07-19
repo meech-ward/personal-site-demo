@@ -23,15 +23,18 @@
 
       <div class="project-divider"></div>
 
+
+      <% for (app of apps) { %>
+
         <div class="col s12 m7">
-          <h3 class="header">My Midterm Project</h3>
+          <h3 class="header"><%= app.name %></h3>
           <div class="card horizontal">
             <div class="card-image">
-              <img src="images/app-icon.png">
+              <img src="<%= app.imagePath %>">
             </div>
             <div class="card-stacked">
               <div class="card-content">
-                <p>Banh mi art party cardigan everyday carry thundercats franzen echo park celiac. Truffaut etsy art party coloring book craft beer quinoa farm-to-table hell of. Woke hoodie jianbing, chartreuse kickstarter humblebrag stumptown truffaut mlkshk salvia quinoa direct trade.</p>
+                <p><%= app.description %></p>
               </div>
               <div class="card-action">
                 <a href="#">Link to project</a>
@@ -42,25 +45,7 @@
 
         <div class="divider project-divider"></div>
 
-        <div class="col s12 m7">
-          <h3 class="header">My Final Project</h3>
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="images/app-icon.png">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>Banh mi art party cardigan everyday carry thundercats franzen echo park celiac. Truffaut etsy art party coloring book craft beer quinoa farm-to-table hell of. Woke hoodie jianbing, chartreuse kickstarter humblebrag stumptown truffaut mlkshk salvia quinoa direct trade.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">Link to project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider project-divider"></div>
-
+        <% } %>
 
     </div> <!-- Container -->
 

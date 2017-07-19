@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
 
+const appData = require('./appData');
+
 const app = express();
 const port = process.env.PORT || 8080; // default port 8080
 
@@ -18,7 +20,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.get("/projects", (req, res) => {
-  res.render("projects");
+  res.render("projects", {apps: appData.apps});
 });
 
 app.post('/contact', (req, res) => {
